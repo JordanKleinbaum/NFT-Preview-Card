@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --VeryDarkBlue: hsl(217, 54%, 11%); /*Main BG*/
+  --DarkerBlue: hsl(216, 50%, 16%); /*Card BG*/
+  --DarkBlue: hsl(215, 32%, 27%); /*Line*/
+  --White: hsl(0, 0%, 100%);
+}
+/*General*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--DarkerBlue);
+  padding: 20px;
+  border-radius: 20px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 2px 1px 18px 7px rgba(0, 0, 0, 0.3);
+}
+
+/*Top Section*/
+.imgdiv {
+  position: relative;
+}
+
+.bigpic {
+  width: 320px;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.eye {
+  position: absolute;
+  border-radius: 10px;
+  padding: 136px;
+  height: 320px;
+  z-index: 1;
+  background-color: hsla(178, 100%, 50%, 0);
+  opacity: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.eye:hover {
+  background-color: hsla(178, 100%, 50%, 0.6);
+  opacity: 1;
+}
+
+/*Middle Section*/
+.title {
+  color: var(--White);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.title:hover {
+  color: var(--Cyan);
+}
+
+.desc {
+  color: var(--SoftBlue);
+  font-size: 20px;
+  width: 317px;
+  line-height: 25px;
+}
+
+.detailssection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currency {
+  color: var(--Cyan);
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.time {
+  color: var(--SoftBlue);
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.ethdiv,
+.timediv {
+  display: flex;
+}
+
+/*Line Break*/
+
+hr {
+  border: 1px solid var(--DarkBlue);
+}
+
+/*Bottom Section*/
+
+.creditsection {
+  display: flex;
+  align-items: center;
+}
+
+.profpic {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.credit {
+  color: var(--SoftBlue);
+  margin-right: 5px;
+}
+
+.name {
+  color: var(--White);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.name:hover {
+  color: var(--Cyan);
+}
